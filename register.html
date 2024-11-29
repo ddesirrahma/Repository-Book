@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <center><img src="gambar/Logo_Universitas_Singaperbangsa_Karawang.png" width="150px"></center>
+	 <center><h2><font color="darkred">SCHOLARSHIP FOR STUDENT CHEMICAL ENGINEERING UNIVERSITAS SINGAPERBANGSA KARAWANG</font> <?php echo $_SESSION['nama']; ?></h2></center>
+	<title>register page</title>
+	<style type="text/css">
+		body {
+			background-image: url(https://pdc.id/wp-content/uploads/2019/12/UNSIKA_1-PhotoEdited.jpg);
+			margin: 0;
+			padding: 0;
+			height: 350px;
+			background-size: cover;
+			font-family: 'Times New Roman', Times, serif;
+		}
+		#wrapper {
+			background-color: #580808;
+			background: rgba(0, 0, 0, 0.5);
+			width: 400px;
+			height: 635px;
+			margin-top: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px;
+			border-radius: 4px;
+			box-shadow: #000a0a;
+		}
+		input[type=text], input[type=password] {
+			border: 1px solid #4e0f0f;
+			padding: 10px;
+			width: 95%;
+			border-radius: 2px;
+			outline: none;
+			margin-top: 10px;
+			margin-bottom: 20px;
+		}
+		label, h1 {
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 40px;
+			color: #7a58ff;
+			
+		}
+		button {
+			margin-bottom: 1px;
+			margin-top: 5px;
+			border-radius: 2px;
+			padding: 10px;
+			width: 120px;
+			background-color: #661818;
+			border: none;
+			color: #070404;
+			font-weight: bold;
+		}
+		.bottom {
+			margin-top: 10px;
+			margin-bottom: 0px;
+		}
+		.media-sosial {
+		 margin-bottom: 1px;
+		 margin-top: 0;
+		}
+
+		.media-sosial h1{
+		 margin-bottom: 10px;
+		}
+		.media-sosial img{
+			margin-bottom: 20px;
+		    width: 30px;
+		    margin: 0 10px;
+		    box-shadow: 0 0 20px 0 #941717;
+		    cursor: pointer;
+		    border-radius: 50%;
+	    }
+		.error {
+			background-color: #79021c;
+			width: 400px;
+			height: auto;
+			margin-top: 20px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 20px;
+			border-radius: 4px;
+			color: #fff;
+		}
+
+		
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+		<form action="register.php" method="POST">
+			<h1><font color="darkred">Register</font></h1>
+			<label><font color="white">Email:</font></label>
+			<input type="text" name="email" placeholder="masukkan email" required="" autofocus="">
+			<label><font color="white">Nomor Handphone:</font></label>
+			<input type="text" name="nomorhandphone" placeholder="masukkan no hp" required="" autofocus="">
+			<label><font color="white">Nama Lengkap:</font></label>
+			<input type="text" name="namalengkap" placeholder="masukkan nama lengkap" required="" autofocus="">
+            <label><font color="white">Kelas:</font></label>
+			<input type="text" name="Kelas" placeholder="masukkan kelas" required="" autofocus="">
+			<label><font color="white">Username:</font></label>
+			<input type="text" name="username" placeholder="masukkan Username" required="" autofocus="">
+			<label><font color="white">Password:</font></label>
+			<input type="password" name="password" placeholder="masukkan password" required="" >
+			<button type="submit"><font color="white">SUBMIT</font></button>
+			<div class="bottom">
+			     <p><label><font color="white">Sudah punya akun?<a href="login.html"><font color="darkred">Login disini</font color></a></font>
+			<p></p><font color="darkred"><font/size="3px">Follow For More Information:</font-size></font>
+	<div class="media-sosial">
+		     <a href="https://www.facebook.com/desii.rhmwt"><img src="gambar/Facebook_f_logo_(2021).svg.webp" alt="facebook"></a>
+		     <a href="https://instagram.com/ddesirrahma"><img src="gambar/download.jpeg" alt="instagram" alt="instagram"></a>
+			 <a href="https://twitter.com/ddesirrahma"><img src="gambar/png-clipart-twitter-twitter-thumbnail.png" alt="twitter"></a>
+	</div>
+	    </form> 	
+</body>
+</html>
